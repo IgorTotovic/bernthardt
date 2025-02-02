@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -27,29 +28,38 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<div class="header-img">
-			
-			<?php
-            if ( has_header_image() ) : ?>
-				<img src="<?php header_image(); ?>" alt="Header Image" class="custom-header-image">
-			<?php endif; ?>
-           </div>
-		   <div class=header-ui>
-			</div>
+		<div class="header-img">
+                <?php
+                if ( has_header_image() ) :
+                ?>
+                    <img src="<?php header_image(); ?>" alt="Header Image" class="custom-header-image">
+                <?php endif; ?>
+            </div>
+
+            <!-- Title for Single Post -->
+            <?php if ( is_single() ) : ?>
+                <div class="title-single-post">
+                    <h2><?php the_title(); ?></h2>
+                </div>
+            <?php endif; ?>
+
+            <div class="header-ui">
+                <!-- Add other UI elements here if needed -->
+            </div>
+
             <div class="logo">
-            <?php
-			the_custom_logo();
-            ?>
-			</div>
+                <?php the_custom_logo(); ?>
+            </div>
+			
+
+			
+
 			<?php
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
+			
 			endif;
 			$bernhardt_theme_description = get_bloginfo( 'description', 'display' );
 			if ( $bernhardt_theme_description || is_customize_preview() ) :
