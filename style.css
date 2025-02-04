@@ -1027,6 +1027,18 @@ opacity: 1;
 	
 
 }
+.custom-sidebar-meny p {
+	top: 570px;
+left: 202px;
+width: 38px;
+height: 18px;
+/* UI Properties */
+text-align: center;
+font: normal normal normal 14px/24px Frank Ruhl Libre;
+letter-spacing: 0px;
+color: #262626;
+opacity: 1;
+}
 .sidebar-meny-img{
 	display:flex;
 	align-items: center;
@@ -1092,20 +1104,141 @@ opacity: 1;
 	padding-left: 459px;
 	padding-right: 459px;
 	top: 0px;
-left: 0px;
-width: 1920px;
-height: 6275px;
+	left: 0px;
+	width: 1920px;
+	height: 6275px;
+	/* UI Properties */
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+.author-card-blog{
+	position:absolute;
+	top: 4452px;
+	left: 459px;
+	width: 1002px;
+	height: 334px;
+	/* UI Properties */
+	background: #C4BC94 0% 0% no-repeat padding-box;
+	opacity: 1;
+	
+
+}
+
+.author-card-avatar {
+	top: 4502px;
+	left: 509px;
+	width: 150px;
+	height: 150px;
+	/* UI Properties */
+	background: transparent url('img/Rectangle 181.png') 0% 0% no-repeat padding-box;
+	opacity: 1;
+	
+	/* UI Properties */
+	background: transparent url('img/Rectangle 181.png') 0% 0% no-repeat padding-box;
+	opacity: 1;
+	padding:0px;
+	margin:50px;
+	margin-bottom: 10px;
+}
+
+#author-card-h3{
+	position:absolute;
+	top: 4470px;
+left: 689px;
+width: 385px;
+height: 42px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 32px/44px Frank Ruhl Libre;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+
+}
+#summary-p{
+	position:absolute;
+	top: 4544px;
+left: 689px;
+width: 385px;
+height: 16px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/24px Raleway;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+#author-info-p{
+	position:absolute;
+	top: 4600px;
+left: 689px;
+width: 722px;
+height: 136px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/24px Raleway;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+	
+}
+#hr-author-card{
+	position:absolute;
+	top: 4580px;
+	left: 689px;
+	width: 722px;
+	height: 0px;
+	border: 1px solid #FFFFFF;
+	opacity: 1
+}
+#call-to-action-p{
+	position:absolute;
+	top: 4580px;
+	left: 689px;
+	width: 722px;
+	height: 0px;
+	border: 1px solid #FFFFFF;
+	opacity: 1;
+	color: #8e0909;
+	opacity: 1;
+}
+.blog-share{
+	position:absolute;
+	/* Layout Properties */
+top: 4836px;
+left: 459px;
+width: 1002px;
+height: 148px;
+/* UI Properties */
+background: #F3F3F3 0% 0% no-repeat padding-box;
+opacity: 1;
+padding:0px;
+}
+.blog-share h3{
+
+top: 4866px;
+left: 509px;
+width: 252px;
+height: 42px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 32px/44px Frank Ruhl Libre;
+letter-spacing: 0px;
+color: #262626;
+opacity: 1;
+margin-left:50px;
+margin-bottom:0px;
+
+}
+.link-area{
+	top: 4918px;
+left: 509px;
+width: 902px;
+height: 36px;
 /* UI Properties */
 background: #FFFFFF 0% 0% no-repeat padding-box;
 opacity: 1;
-}
-.author-avatar{
-	top: 4452px;
-left: 459px;
-width: 1002px;
-height: 334px;
-/* UI Properties */
-background: #C4BC94 0% 0% no-repeat padding-box;
-opacity: 1;
-
+margin-left:50px;
+margin-bottom:30px;
+	
 }

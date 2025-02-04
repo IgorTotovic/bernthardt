@@ -190,3 +190,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function add_custom_user_contact_methods($customFields) {
+    
+    $customFields['linkedin'] = 'LinkedIn Profile URL';
+    $customFields['summary'] = 'Short Summary';
+    
+    
+    return $customFields;
+}
+
+
+add_filter('user_contactmethods', 'add_custom_user_contact_methods');
