@@ -967,6 +967,7 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+/*my css*/
 .header-img{
     position:relative;
 	top: 0px;
@@ -976,6 +977,8 @@ textarea {
 	background-size:cover;
 	padding:0%;
 	margin:0%;
+	
+	
 }
 .header-ui{
 	position:absolute;
@@ -1012,6 +1015,97 @@ height: 82px;
 	text-align: center;
 font: normal normal normal 64px/72px Frank Ruhl Libre;
 letter-spacing: 0px;
-color: #FFFFFF;
+color: #ffffff;
 opacity: 1;
+}
+.custom-sidebar-meny{
+	position: fixed;  
+    top: 598px;        
+    left: 201px;       
+    width: 40px;       
+    z-index: 1000;
+	
+
+}
+.sidebar-meny-img{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	border-radius:75%;
+	top: 598px;
+	left: 201px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #C4BC94;
+	opacity: 1;
+	
+	margin-bottom:10px;
+}
+#category-p{
+	top: 570px;
+left: 459px;
+width: 37px;
+height: 16px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/24px Raleway;
+letter-spacing: 0px;
+color: #C4BC94;
+opacity: 1;
+}
+#post-title{
+	top: 586px;
+left: 459px;
+width: 357px;
+height: 62px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 48px/64px Frank Ruhl Libre;
+letter-spacing: 0px;
+color: #262626;
+opacity: 1;
+}
+#blog-post-hr{
+	/* Layout Properties */
+top: 1118px;
+left: 459px;
+width: 1002px;
+height: 0px;
+/* UI Properties */
+border: 1px solid #C4BC94;
+opacity: 1;
+}
+#summary-p{
+	/* Layout Properties */
+top: 684px;
+left: 459px;
+width: 1002px;
+height: 40px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/24px Raleway;
+letter-spacing: 0px;
+color: #262626;
+opacity: 1;
+}
+.blog-post-container{
+	padding-left: 459px;
+	padding-right: 459px;
+	top: 0px;
+left: 0px;
+width: 1920px;
+height: 6275px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.author-avatar{
+	top: 4452px;
+left: 459px;
+width: 1002px;
+height: 334px;
+/* UI Properties */
+background: #C4BC94 0% 0% no-repeat padding-box;
+opacity: 1;
+
 }
