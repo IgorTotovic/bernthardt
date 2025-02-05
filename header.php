@@ -17,6 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
 
 	<?php wp_head(); ?>
 </head>
@@ -50,11 +52,18 @@
             <div class="logo">
                 <?php the_custom_logo(); ?>
             </div>
-			<div id=meny-products>
-				<h3>Products</h3>
-				<img>
-			</div>
 			
+			<div class=meny-products>
+				<p>Products</p>
+				<div><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/Icon material-keyboard-arrow-down.png" alt="arrow-down"></a></div>
+			</div>
+			<div class="meny-collection">
+				<p>Collection<p>
+			</div>
+			<div class=meny-design>
+				<p>Design Resources</p>
+				<div id="design-arrow"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/Icon material-keyboard-arrow-down.png" alt="arrow-down"></a></div>
+			</div>
 
 			<?php
 			if ( is_front_page() && is_home() ) :
