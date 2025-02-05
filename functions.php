@@ -194,6 +194,9 @@ function add_custom_user_contact_methods($customFields) {
     
     $customFields['linkedin'] = 'LinkedIn Profile URL';
     $customFields['summary'] = 'Short Summary';
+	$customFields['facebook'] = 'Facebook Profile URL';
+	$customFields['twitter'] = 'Twitter Profile URL';
+	$customFields['pinterest'] = 'Pinterestt Profile URL';
     
     
     return $customFields;

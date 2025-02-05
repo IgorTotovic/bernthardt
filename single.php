@@ -40,9 +40,13 @@ get_header();
 			$author_id = $post->post_author;  
 			$user_name = get_the_author_meta( 'display_name',$author_id );
 			$linkedin = get_the_author_meta('linkedin', $author_id);
+			$facebook = get_the_author_meta('facebook', $author_id);
+			$twitter = get_the_author_meta('twitter', $author_id);
+			$pinterest = get_the_author_meta('pinterest', $author_id);
 			$summary = get_the_author_meta('summary', $author_id);
 			$about=get_the_author_meta('description', $author_id);				
-			$author_avatar = get_avatar($author_id, 150,); 
+			$author_avatar = get_avatar($author_id, 150,);
+			$email= get_the_author_meta('email', $author_id);
 				
 			?>
 			
@@ -83,10 +87,10 @@ get_header();
 		<hr id="bot-hr">
 		<div class="custom-sidebar-meny">
 			<p>share:</p>
-			<div class="sidebar-meny-img"><a href="http://google.com"><img src="<?php echo get_template_directory_uri(); ?>/images/email.png" alt="email icon"></a></div>
-			<div class="sidebar-meny-img"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="Description of the image"></div>
-			<div class="sidebar-meny-img"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" alt="Description of the image"></div>
-			<div class="sidebar-meny-img"><img src="<?php echo get_template_directory_uri(); ?>/images/pinterest.png" alt="email icon"></div>
+			<div class="sidebar-meny-img"><a href="mailto:<?php echo esc_url($email); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/email.png" alt="email icon"></a></div>
+			<div class="sidebar-meny-img"><a href="<?php echo esc_url($facebook); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="Description of the image"></a></div>
+			<div class="sidebar-meny-img"><a href="<?php echo esc_url($twitter); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" alt="Description of the image"></a></div>
+			<div class="sidebar-meny-img"><a href="<?php echo esc_url($pinterest); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/pinterest.png" alt="email icon"></a></div>
 			
 
 
@@ -114,4 +118,5 @@ function copyToClipboard() {
 
     
 }
+
 </script>
