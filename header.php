@@ -50,8 +50,10 @@
             <div class="logo">
                 <?php the_custom_logo(); ?>
             </div>
-			
-
+			<div id=meny-products>
+				<h3>Products</h3>
+				<img>
+			</div>
 			
 
 			<?php

@@ -45,26 +45,7 @@ get_header();
 			$author_avatar = get_avatar($author_id, 150,); 
 				
 			?>
-			<div >
-				<?php echo $author_avatar; ?>
-				<h3><?php echo $user_name;?></h3>
-				<h3><?php echo $user_email;?></h3>
-				<h3><?php echo $linkedin;?></h3>
-				<p><?php echo $summary;?></p>
-				<hr>
-				
-				<?php echo esc_url( home_url( add_query_arg( null, null ) ) ); ?>
-
-			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+			
 		<div class="author-card-blog">
 			
 				<div class="author-card-avatar">
@@ -91,14 +72,15 @@ get_header();
 		<div class="blog-share">
 			<h3>Share this article:</h3>
 			<div class="link-area">
-				<p readonly><?php echo esc_url( get_permalink() ); ?><p>
+				<p id="share-link"><?php echo esc_url( get_permalink() ); ?><p>
+					<img id="copy-img" src="<?php echo get_template_directory_uri(); ?>/images/Icon awesome-copy.png" onclick="copyToClipboard()" alt="copy url image">
 			</div>
 
-		
-
+			
 
 
 		</div>
+		<hr id="bot-hr">
 		<div class="custom-sidebar-meny">
 			<p>share:</p>
 			<div class="sidebar-meny-img"><a href="http://google.com"><img src="<?php echo get_template_directory_uri(); ?>/images/email.png" alt="email icon"></a></div>
@@ -115,3 +97,21 @@ get_header();
 <?php
 get_sidebar();
 get_footer();
+?>
+<script>
+function copyToClipboard() {
+    
+    var inputc = document.body.appendChild(document.createElement("input"));
+    
+    inputc.value = window.location.href;
+
+    inputc.focus();
+    inputc.select();
+
+    document.execCommand('copy');
+
+    inputc.parentNode.removeChild(inputc);
+
+    
+}
+</script>

@@ -1229,6 +1229,7 @@ opacity: 1;
 margin-left:50px;
 margin-bottom:0px;
 
+
 }
 .link-area{
 	top: 4918px;
@@ -1240,5 +1241,47 @@ background: #FFFFFF 0% 0% no-repeat padding-box;
 opacity: 1;
 margin-left:50px;
 margin-bottom:30px;
+display:flex;
+flex-direction: column;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+
 	
+}
+#copy-img{
+	top: 4928px;
+left: 1387px;
+width: 14px;
+height: 16px;
+/* UI Properties */
+background: transparent  0% 0% no-repeat padding-box;
+opacity: 1;
+margin-right:5px ;
+padding: 0px;
+margin-top:10px;
+
+}
+share-link{
+	
+	top: 4928px;
+left: 519px;
+width: 372px;
+height: 16px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 14px/24px Raleway;
+letter-spacing: 0px;
+color: #262626;
+opacity: 
+}
+#bot-hr{
+	position:absolute;
+	top: 5054px;
+left: 201px;
+width: 1518px;
+height: 0px;
+/* UI Properties */
+border: 1px solid #C4BC94;
+opacity: 1;
 }
